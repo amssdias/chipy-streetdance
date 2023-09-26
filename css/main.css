@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -8,6 +25,26 @@
 
 html {
   font-size: 62.5%;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 46%;
+  }
 }
 
 body {
@@ -22,7 +59,6 @@ body {
 body {
   font-family: "Merriweather", serif;
   font-weight: 400;
-  /*font-size: 16px;*/
   line-height: 1.7;
   color: #777;
 }
@@ -44,6 +80,11 @@ body {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .heading-primary {
+    text-align: center;
+  }
 }
 
 .heading-secondary {
@@ -103,6 +144,23 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
+.video {
+  width: 90rem;
+  height: 45rem;
+}
+@media only screen and (max-width: 75em) {
+  .video {
+    width: 70rem;
+    height: 40rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .video {
+    width: 60rem;
+    height: 35rem;
+  }
+}
+
 .header {
   height: 85vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../images/hedaer-1.avif);
@@ -116,10 +174,21 @@ body {
 .navigation-bar {
   padding: 3rem;
 }
+@media only screen and (max-width: 75em) {
+  .navigation-bar {
+    padding: 1rem;
+  }
+}
 .navigation-bar__list {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (max-width: 75em) {
+  .navigation-bar__list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
 }
 .navigation-bar__list-item {
   list-style-type: none;
@@ -136,18 +205,25 @@ body {
 
 .section-company, .section-projects {
   padding: 5rem 0rem;
+  width: 40%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 75em) {
+  .section-company, .section-projects {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .section-company, .section-projects {
+    width: 80%;
+  }
+}
 .section-company .paragraph, .section-projects .paragraph {
   text-align: center;
-}
-
-.section-company {
-  width: 40%;
 }
 
 .section-projects {

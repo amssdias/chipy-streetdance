@@ -1,0 +1,15 @@
+.video {
+    width: 90rem;
+    height: 45rem;
+
+    @include respond(tab-land) {
+        width: 70rem;
+        height: 40rem;
+    }
+
+    @include respond(tab-port) {
+        width: 60rem;
+        height: 35rem;
+    }
+
+}

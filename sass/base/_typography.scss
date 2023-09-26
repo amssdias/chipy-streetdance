@@ -1,7 +1,6 @@
 body {
     font-family: 'Merriweather', serif;
     font-weight: 400;
-    /*font-size: 16px;*/
     line-height: 1.7;
     color: $color-grey-dark;
 }
@@ -36,6 +35,10 @@ body {
         font-weight: 700;
         letter-spacing: 2rem;
         // animation: moveInRight 1s ease-out;
+    }
+
+    @include respond(tab-port) { 
+        text-align: center;
     }
 }
 
