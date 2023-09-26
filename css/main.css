@@ -1,0 +1,156 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #55c57a;
+  color: #fff;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: #777;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 8rem;
+  letter-spacing: 7rem;
+}
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  letter-spacing: 5rem;
+}
+.heading-primary--sub {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2rem;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  color: #000;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+}
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 3rem;
+}
+
+.btn, .btn:link, .btn:visited {
+  text-decoration: none;
+  padding: 1.5rem 5rem;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  height: 85vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../images/hedaer-1.avif);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-bar {
+  padding: 3rem;
+}
+.navigation-bar__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigation-bar__list-item {
+  list-style-type: none;
+  padding: 1rem 3rem;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+.navigation-bar__list-item:hover {
+  cursor: pointer;
+  color: #999;
+}
+
+.section-company, .section-projects {
+  padding: 5rem 0rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-company .paragraph, .section-projects .paragraph {
+  text-align: center;
+}
+
+.section-company {
+  width: 40%;
+}
+
+.section-projects {
+  width: 100%;
+  background-color: #eee;
+}/*# sourceMappingURL=main.css.map */
