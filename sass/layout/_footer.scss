@@ -1,0 +1,42 @@
+.footer {
+    padding: 4rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $color-grey-light-2;
+
+
+    &__social-network{
+        width: 10%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--logo {
+            width: 3rem;
+            
+            @include respond(tab-land) { 
+                width: 4rem;
+            }
+        }
+
+        &--link:not(:last-child) {
+            margin-right: 3.2rem;
+        }
+
+    }
+
+    &__paragraph {
+        font-size: 1rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-black;
+        font-weight: 700;
+    }
+}
