@@ -125,8 +125,6 @@ body {
   transition: all 0.2s;
   position: relative;
   font-size: 1.6rem;
-  color: #fff;
-  background-color: #000;
   border: none;
   cursor: pointer;
 }
@@ -142,6 +140,14 @@ body {
   outline: none;
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn--black {
+  color: #fff;
+  background-color: #000;
+}
+.btn--white {
+  color: #000;
+  background-color: #fff;
 }
 
 .video {
@@ -210,7 +216,7 @@ body {
   color: #999;
 }
 
-.section-company, .section-projects {
+.section-company, .section-projects, .section-gallery {
   padding: 5rem 0rem;
   width: 40%;
   margin: 0 auto;
@@ -220,20 +226,31 @@ body {
   align-items: center;
 }
 @media only screen and (max-width: 75em) {
-  .section-company, .section-projects {
+  .section-company, .section-projects, .section-gallery {
     width: 60%;
   }
 }
 @media only screen and (max-width: 56.25em) {
-  .section-company, .section-projects {
+  .section-company, .section-projects, .section-gallery {
     width: 80%;
   }
 }
-.section-company .paragraph, .section-projects .paragraph {
+.section-company .paragraph, .section-projects .paragraph, .section-gallery .paragraph {
   text-align: center;
 }
 
 .section-projects {
   width: 100%;
   background-color: #eee;
+}
+
+.section-gallery {
+  width: 100%;
+  height: 60vh;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.6)), url(../images/gallery-header.avif);
+  background-size: cover;
+  background-position: center;
+}
+.section-gallery h2 {
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
