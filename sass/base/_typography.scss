@@ -6,17 +6,19 @@ body {
 }
 
 .heading-primary {
+    display: block;
     color: $color-white;
     text-transform: uppercase;
     font-size: 8rem;
 
     letter-spacing: 7rem;
+    margin: 0 auto;
 
     &--main {
         display: block;
         font-size: 6rem;
-
-        letter-spacing: 5rem
+        text-align: center;
+        letter-spacing: 4rem;
     
         // animation-name: moveInLeft;
         // animation-duration: 1s;
@@ -26,6 +28,15 @@ body {
         animation-delay: 3s;
         animation-iteration-count: 3;
         */
+
+        @include respond(tab-port) { 
+            letter-spacing: 3rem;
+        }
+
+        @include respond(phone) { 
+            letter-spacing: 1.5rem;
+        }
+
     }
     
     &--sub {
