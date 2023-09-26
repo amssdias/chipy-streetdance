@@ -11,11 +11,6 @@
         align-items: center;
         justify-content: center;
 
-        @include respond(tab-land) {
-            justify-content: flex-start;
-            flex-wrap: wrap;
-        }
-
 
         &-item {
             list-style-type: none;

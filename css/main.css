@@ -235,12 +235,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-@media only screen and (max-width: 75em) {
-  .navigation-bar__list {
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-}
 .navigation-bar__list-item {
   list-style-type: none;
   padding: 1rem 3rem;
