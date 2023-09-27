@@ -131,6 +131,10 @@ body {
   margin-bottom: 3rem;
 }
 
+.margin-bottom-xxxlarge {
+  margin-bottom: 6rem;
+}
+
 .margin-bottom-medium {
   margin-bottom: 3rem;
 }
@@ -306,22 +310,12 @@ body {
 
 .section-contact {
   background-color: #f7f7f7;
-  padding: 5rem 0rem;
+  padding: 5rem 0rem 0rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-@media only screen and (max-width: 75em) {
-  .section-contact {
-    width: 60%;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .section-contact {
-    width: 80%;
-  }
 }
 .section-contact .paragraph {
   text-align: center;
@@ -332,4 +326,7 @@ body {
 }
 .section-contact--slogan {
   font-size: 1.4rem;
+}
+.section-contact--image {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
