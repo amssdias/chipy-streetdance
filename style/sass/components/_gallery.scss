@@ -1,0 +1,21 @@
+.gallery {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &--image {
+        max-width: calc(33% - 1rem);
+        max-height: calc(25% - 1rem);
+        margin: 0.5rem;
+        object-fit: cover;
+
+        transition: 0.3s;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+    }
+}
