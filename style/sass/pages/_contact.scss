@@ -1,0 +1,33 @@
+.section-contact {
+    background-color: $color-grey-light-1;
+    padding: 5rem 0rem;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(tab-land) {
+        width: 60%;
+    }
+
+    @include respond(tab-port) {
+        width: 80%;
+    }
+
+    & .paragraph {
+        text-align: center;
+    }
+
+    &--email {
+        font-size: 1.2rem;
+        font-weight: 900;
+    }
+
+    &--slogan {
+        font-size: 1.4rem;
+    }
+
+}
