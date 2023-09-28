@@ -174,6 +174,8 @@ body {
 .bg-video__content {
   width: 100%;
   object-fit: contain;
+  position: absolute;
+  bottom: -10%;
 }
 .bg-video::before {
   content: "";
@@ -393,7 +395,7 @@ body {
 
 .section-gallery {
   width: 100%;
-  height: 60vh;
+  height: 90vh;
   position: relative;
 }
 .section-gallery h2 {
