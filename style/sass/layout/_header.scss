@@ -11,4 +11,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    & h1 .heading-primary--main {
+        animation: moveInTop;
+        animation-duration: 2s;
+    }
+
+    & h1 .heading-primary--sub {
+        animation: moveInTop;
+        animation-duration: 2s;
+    }
 }
