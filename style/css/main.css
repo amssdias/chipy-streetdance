@@ -17,7 +17,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 @font-face {
   font-family: "Signatra";
-  src: url("/style/utils/Signatra/Signatra.ttf") format("truetype");
+  src: url("../utils/Signatra/Signatra.ttf") format("truetype");
 }
 *,
 *::after,
