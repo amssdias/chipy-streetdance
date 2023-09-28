@@ -15,6 +15,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+@font-face {
+  font-family: "Signatra";
+  src: url("/style/utils/Signatra/Signatra.ttf") format("truetype");
+}
 *,
 *::after,
 *::before {
@@ -68,6 +72,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   font-size: 8rem;
+  font-family: "Signatra";
   letter-spacing: 7rem;
   margin: 0 auto;
 }
@@ -108,6 +113,7 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
+  font-family: "Signatra";
   display: inline-block;
   color: #000;
   letter-spacing: 0.2rem;
@@ -128,7 +134,7 @@ body {
   font-size: 1.6rem;
 }
 .paragraph:not(:last-child) {
-  margin-bottom: 3rem;
+  margin-bottom: 1.6rem;
 }
 
 .margin-bottom-xxxlarge {
@@ -272,6 +278,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.navigation-bar__list--link {
+  text-decoration: none;
 }
 .navigation-bar__list-item {
   list-style-type: none;

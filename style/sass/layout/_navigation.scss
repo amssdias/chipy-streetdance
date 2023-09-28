@@ -11,6 +11,9 @@
         align-items: center;
         justify-content: center;
 
+        &--link {
+            text-decoration: none;
+        }
 
         &-item {
             list-style-type: none;

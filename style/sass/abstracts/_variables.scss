@@ -22,6 +22,10 @@ $color-black: #000;
 
 // FONT
 $default-font-size: 1.6rem;
+@font-face {
+    font-family: 'Signatra';
+    src: url("/style/utils/Signatra/Signatra.ttf") format("truetype");
+ }
 
 
 // GRID
