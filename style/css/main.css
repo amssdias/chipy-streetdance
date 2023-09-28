@@ -119,6 +119,11 @@ body {
   letter-spacing: 0.2rem;
   transition: all 0.2s;
 }
+@media only screen and (max-width: 37.5em) {
+  .heading-secondary {
+    text-align: center;
+  }
+}
 .heading-secondary:hover {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -378,7 +383,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .section-presentation {
-    padding: 5rem 5rem;
+    padding: 5rem 1rem;
   }
 }
 .section-presentation__text {

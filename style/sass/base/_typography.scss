@@ -61,11 +61,13 @@ body {
     font-family: "Signatra";
 
     display: inline-block;
-    // background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    // -webkit-background-clip: text;
     color: $color-black;
     letter-spacing: .2rem;
     transition: all .2s;
+
+    @include respond(phone) { 
+        text-align: center;
+    }
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
