@@ -27,6 +27,14 @@
     </nav>
 
     <header class="header">
+
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="videos/header-video.mp4" type="video/mp4" id="header-video">
+                Your browser is not supported!
+            </video>
+        </div>
+
         <h1 class="heading-primary">
             <span class="heading-primary--main">Chipi show</span>
             <span class="heading-primary--sub">Street dance performer</span>
@@ -72,7 +80,7 @@
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                     <!-- <source src="img/video.mp4" type="video/mp4"> -->
-                    <source src="videos/chipishow_redbull.mp4" type="video/mp4">
+                    <source src="videos/header-video.mp4" type="video/mp4">
                     Your browser is not supported!
                 </video>
             </div>
@@ -104,6 +112,14 @@
         <p class="footer__paragraph">Todos los derechos reservados Chipi show - <a href="#" class="footer__link">@ André Dias</a></p>
 
     </footer>
+
+    <script>
+        if (window.innerWidth < 700) {
+            const headerVideo = document.getElementById("header-video");
+            headerVideo.src = "videos/header-video-phone.mp4"
+        }
+
+    </script>
 
 </body>
 </html>
