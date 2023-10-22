@@ -160,6 +160,20 @@ body {
   margin-bottom: 2rem;
 }
 
+.bg-photo-parallax-1 {
+  background-image: url(../../../images/chipishow_12.JPG);
+}
+
+.bg-photo-parallax-2 {
+  background-image: url(../../../images/chipishow_10.JPG);
+}
+
+.parallax {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .bg-video {
   position: absolute;
   top: 0%;
@@ -460,6 +474,33 @@ body {
 .section-gallery {
   width: 100%;
   background-color: #f7f7f7;
+}
+
+.section-photo-parallax {
+  height: 30vh;
+}
+
+.section-youtube {
+  background-color: #f7f7f7;
+  padding: 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-youtube-videos {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-youtube-videos {
+    flex-wrap: wrap;
+  }
+}
+.section-youtube-videos > * {
+  margin: 2rem;
 }
 
 .section-presentation {

@@ -42,5 +42,36 @@
     // background-size: cover;
     // background-position: center;
 
+}
+
+.section-photo-parallax {
+    height: 30vh;
+}
+
+.section-youtube {
+    background-color: $color-grey-light-1;
+    padding: 5rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-videos {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        
+        @include respond(tab-port) {
+            flex-wrap: wrap;
+        }
+        
+        & > * {
+            margin: 2rem;
+        }
+    }
 
 }
