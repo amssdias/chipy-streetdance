@@ -173,6 +173,10 @@ body {
   margin-bottom: 1.6rem;
 }
 
+.margin-top-xlarge {
+  margin-top: 5rem;
+}
+
 .margin-bottom-xxxlarge {
   margin-bottom: 6rem;
 }
@@ -456,7 +460,7 @@ body {
   width: 100%;
 }
 
-.section-company, .section-projects, .section-gallery {
+.section-company {
   padding: 5rem 0rem;
   width: 40%;
   margin: 0 auto;
@@ -466,16 +470,16 @@ body {
   align-items: center;
 }
 @media only screen and (max-width: 75em) {
-  .section-company, .section-projects, .section-gallery {
+  .section-company {
     width: 60%;
   }
 }
 @media only screen and (max-width: 56.25em) {
-  .section-company, .section-projects, .section-gallery {
+  .section-company {
     width: 80%;
   }
 }
-.section-company .paragraph, .section-projects .paragraph, .section-gallery .paragraph {
+.section-company .paragraph {
   text-align: center;
 }
 
@@ -485,6 +489,7 @@ body {
 }
 
 .section-gallery {
+  padding: 5rem 0rem;
   width: 100%;
   background-color: #f7f7f7;
 }
