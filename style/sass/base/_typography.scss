@@ -99,6 +99,7 @@ body {
 
     @include respond(phone) { 
         letter-spacing: 1.2rem;
+        clip-path: polygon(0 30%, 100% 15%, 100% 65%, 0 80%);
     }
 }
 
