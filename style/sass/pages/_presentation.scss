@@ -23,6 +23,10 @@
 
     &__text {
         width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     & .paragraph {
@@ -39,8 +43,7 @@
     }
 
     &--image {
-        width: 100%;
-
+        width: 70%;
     }
 
 }
