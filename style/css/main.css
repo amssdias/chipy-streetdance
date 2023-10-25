@@ -559,4 +559,14 @@ body {
 }
 .section-presentation--image {
   width: 70%;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-presentation--image {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .section-presentation--image {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
