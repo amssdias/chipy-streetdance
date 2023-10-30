@@ -1,5 +1,13 @@
 .navigation-bar {
     padding: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: $color-white;
+
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
 
     @include respond(tab-land) {
         padding: 1rem;

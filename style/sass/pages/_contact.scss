@@ -3,6 +3,9 @@
     padding: 5rem 0rem 0rem;
 
     margin: 0 auto;
+    // This is so the video can be occupying more of the view
+    // Because the navigation bar is fixed.
+    margin-top: 6rem;
 
     display: flex;
     flex-direction: column;
