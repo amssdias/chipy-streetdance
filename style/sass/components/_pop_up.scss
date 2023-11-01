@@ -1,0 +1,43 @@
+.pop-up {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10000;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    display: none;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-image {
+        // width: 100%;      /* Scale with the width of the container */
+        max-width: 100%; /* Max width is the original image width */
+        height: auto;     /* Maintain aspect ratio */
+        display: block;   /* Remove extra space below the image */
+
+        &-container {
+            width: 50%;
+            height: 90%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include respond(tab-land) {
+                width: 60%;
+            }
+
+            @include respond(tab-port) {
+                width: 75%;
+            }
+    
+            @include respond(phone) {
+                width: 85%;
+            }
+        }
+    }
+}

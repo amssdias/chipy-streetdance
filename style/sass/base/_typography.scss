@@ -85,21 +85,28 @@ body {
         rgba($color-black, 0.7),
         rgba($color-black, 0.9)),
         url(../../images/chipishow_header.JPG);
-        clip-path: polygon(0 50%, 100% 0, 100% 50%, 0 100%);
-        background-size: cover;
-        background-position: center;
+    clip-path: polygon(0 30%, 100% 0, 100% 70%, 0 100%);
+    background-size: cover;
+    background-position: 0% 85%;
+    background-attachment: fixed;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // @include respond(tab-land) { 
+    //     background-position: 0% 55%;
+    // }
 
     @include respond(tab-port) { 
         letter-spacing: 2.2rem;
+        background-position: 0% 40%;
     }
 
     @include respond(phone) { 
         letter-spacing: 1.2rem;
         clip-path: polygon(0 30%, 100% 15%, 100% 65%, 0 80%);
+        background-position: 0% 85%;
     }
 }
 

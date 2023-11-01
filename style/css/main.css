@@ -147,9 +147,10 @@ body {
   text-align: center;
   letter-spacing: 3rem;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../../images/chipishow_header.JPG);
-  clip-path: polygon(0 50%, 100% 0, 100% 50%, 0 100%);
+  clip-path: polygon(0 30%, 100% 0, 100% 70%, 0 100%);
   background-size: cover;
-  background-position: center;
+  background-position: 0% 85%;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,12 +158,14 @@ body {
 @media only screen and (max-width: 56.25em) {
   .heading-bg-presentations {
     letter-spacing: 2.2rem;
+    background-position: 0% 40%;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .heading-bg-presentations {
     letter-spacing: 1.2rem;
     clip-path: polygon(0 30%, 100% 15%, 100% 65%, 0 80%);
+    background-position: 0% 85%;
   }
 }
 
@@ -323,6 +326,46 @@ body {
   position: relative;
 }
 
+.pop-up {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up-image {
+  max-width: 100%; /* Max width is the original image width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below the image */
+}
+.pop-up-image-container {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 75em) {
+  .pop-up-image-container {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .pop-up-image-container {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .pop-up-image-container {
+    width: 85%;
+  }
+}
+
 .video {
   position: relative;
   width: 90rem;
@@ -401,9 +444,9 @@ body {
 }
 
 .header-presentations {
-  height: 25vh;
+  height: 35vh;
   background-color: #f7f7f7;
-  margin-top: 6rem;
+  margin-top: 10rem;
   color: #fff;
   display: flex;
   justify-content: center;
