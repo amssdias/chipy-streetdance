@@ -193,17 +193,13 @@ body {
 }
 
 .bg-photo-parallax-1 {
-  background-image: url(../../images/home/chipishow-parallax-3.jpg);
-}
-
-.bg-photo-parallax-2 {
   background-image: url(../../images/home/chipishow-parallax-4.jpg);
 }
 
 .parallax {
   background-size: cover;
-  background-position: bottom;
   background-attachment: fixed;
+  background-position: 0% 60%;
 }
 
 .bg-video {
@@ -231,6 +227,10 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8); /* Adjust the alpha (0.5) to control darkness */
   z-index: 1; /* Place it above the video */
+}
+
+.bg-video--horizontal {
+  width: 100%;
 }
 
 .btn, .btn:link, .btn:visited {
