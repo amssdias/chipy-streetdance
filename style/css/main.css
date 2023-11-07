@@ -480,7 +480,7 @@ body {
 }
 @media only screen and (max-width: 75em) {
   .navigation-bar__logo {
-    height: 6rem;
+    height: 6.5rem;
   }
 }
 .navigation-bar__list {
