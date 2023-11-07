@@ -468,10 +468,36 @@ body {
     padding: 1rem;
   }
 }
+@media only screen and (max-width: 56.25em) {
+  .navigation-bar {
+    height: 7rem;
+  }
+}
+.navigation-bar__logo {
+  position: absolute;
+  top: 0;
+  height: 10rem;
+}
+@media only screen and (max-width: 75em) {
+  .navigation-bar__logo {
+    height: 6rem;
+  }
+}
 .navigation-bar__list {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .navigation-bar__list {
+    display: none;
+    position: absolute;
+    top: 6rem;
+    left: 0rem;
+    right: 0rem;
+    background-color: #fff;
+    flex-direction: column;
+  }
 }
 .navigation-bar__list--link {
   text-decoration: none;
@@ -487,6 +513,21 @@ body {
 .navigation-bar__list-item:hover {
   cursor: pointer;
   color: #999;
+}
+.navigation-bar__menu-icon {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  width: 5rem;
+  height: 5rem;
+  color: black;
+  display: none;
+  z-index: 10000;
+}
+@media only screen and (max-width: 56.25em) {
+  .navigation-bar__menu-icon {
+    display: block;
+  }
 }
 
 .section-contact {

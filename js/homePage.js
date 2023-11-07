@@ -3,12 +3,10 @@ if (window.innerWidth < 700) {
     headerVideo.src = "videos/header-video-phone.mp4"
 }
 
-function displayFullScreenImage() {
-    document.querySelector("body").style.background = "black";
-}
 
 window.addEventListener('load', function() {
 
+    // Home page, event for images become big
     let images = document.querySelectorAll(".gallery-row--image");
     let popUp = this.document.querySelector("#pop-up");
     let img = document.querySelector("#pop-up-image");
