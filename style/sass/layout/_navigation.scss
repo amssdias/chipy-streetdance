@@ -66,6 +66,18 @@
         }
     }
 
+    &__slogan {
+        display: none;
+        font-size: 4rem;
+        text-align: center;
+        color: $color-black;
+
+        @include respond(tab-port) {
+            display: block;
+        }
+
+    }
+
     &__menu-icon {
         position: absolute;
         top: 1rem;

@@ -171,6 +171,7 @@ body {
 
 .paragraph {
   font-size: 1.6rem;
+  text-align: justify;
 }
 .paragraph:not(:last-child) {
   margin-bottom: 1.6rem;
@@ -514,6 +515,17 @@ body {
   cursor: pointer;
   color: #999;
 }
+.navigation-bar__slogan {
+  display: none;
+  font-size: 4rem;
+  text-align: center;
+  color: #000;
+}
+@media only screen and (max-width: 56.25em) {
+  .navigation-bar__slogan {
+    display: block;
+  }
+}
 .navigation-bar__menu-icon {
   position: absolute;
   top: 1rem;
@@ -572,9 +584,6 @@ body {
   .section-company {
     width: 80%;
   }
-}
-.section-company .paragraph {
-  text-align: center;
 }
 
 .section-projects {
@@ -645,9 +654,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.section-presentation .paragraph {
-  text-align: center;
 }
 .section-presentation--email {
   font-size: 1.2rem;
