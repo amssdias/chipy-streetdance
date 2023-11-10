@@ -265,6 +265,12 @@ body {
   color: #000;
   background-color: #fff;
 }
+.btn--fixed {
+  position: fixed !important;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+}
 
 .gallery-row {
   display: flex;
