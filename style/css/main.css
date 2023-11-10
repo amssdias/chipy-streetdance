@@ -270,6 +270,7 @@ body {
   bottom: 2rem;
   right: 2rem;
   z-index: 100;
+  padding: 1.5rem 3rem !important;
 }
 
 .gallery-row {
