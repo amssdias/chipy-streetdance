@@ -257,6 +257,9 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
+.btn--letters-green {
+  color: #32CD32 !important;
+}
 .btn--black {
   color: #fff;
   background-color: #000;
