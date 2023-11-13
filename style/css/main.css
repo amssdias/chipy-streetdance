@@ -146,7 +146,7 @@ body {
   font-size: 5rem;
   text-align: center;
   letter-spacing: 3rem;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../../images/chipishow_header.JPG);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../../images/chipishow-header.jpg);
   clip-path: polygon(0 30%, 100% 0, 100% 70%, 0 100%);
   background-size: cover;
   background-position: 0% 85%;
