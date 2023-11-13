@@ -68,8 +68,9 @@
 
     &__slogan {
         display: none;
-        font-size: 4rem;
+        font-size: 3rem;
         text-align: center;
+        text-transform: uppercase;
         color: $color-black;
 
         @include respond(tab-port) {

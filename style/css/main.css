@@ -527,8 +527,9 @@ body {
 }
 .navigation-bar__slogan {
   display: none;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
+  text-transform: uppercase;
   color: #000;
 }
 @media only screen and (max-width: 56.25em) {
