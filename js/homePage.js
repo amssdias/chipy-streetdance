@@ -14,7 +14,10 @@ window.addEventListener('load', function() {
     for (const image of images) {
         image.addEventListener("click", function() {            
             popUp.style.display = "flex";
-            img.src = this.src;
+
+            // Use original image
+            let source = this.src.split("-").slice(0, 2).join("-")
+            img.src = `${source}.jpg`;
         });
     }
 
