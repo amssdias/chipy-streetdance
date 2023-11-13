@@ -58,6 +58,18 @@
         & > * {
             margin: 2rem;
         }
+
+        & .video-container {
+            padding-top: 30%;
+
+            @include respond(tab-port) {
+                padding-top: 50%;
+            }
+
+            @include respond(phone) {
+                padding-top: 53%;
+            }
+        }
     }
 
 }

@@ -1,21 +1,15 @@
-.video {
+.video-container {
     position: relative;
-    width: 90rem;
-    height: 45rem;
+    width: 100%;
+    padding-top: 56.25%; /* Aspect Ratio 16:9 */
+    overflow: hidden;
 
-    @include respond(tab-land) {
-        width: 70rem;
-        height: 40rem;
-    }
-
-    @include respond(tab-port) {
-        width: 60rem;
-        height: 35rem;
-    }
-
-    @include respond(phone) {
+    & .video {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: 35rem;
+        height: 100%;
+        border: none;
     }
-
 }
