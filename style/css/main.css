@@ -146,7 +146,7 @@ body {
   font-size: 5rem;
   text-align: center;
   letter-spacing: 3rem;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../../images/chipishow-header.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../../images/chipishow-header-big-desktop.jpg);
   clip-path: polygon(0 30%, 100% 0, 100% 70%, 0 100%);
   background-size: cover;
   background-position: 0% 85%;
@@ -155,14 +155,21 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 75em) {
+  .heading-bg-presentations {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../../images/chipishow-header-tab-land.jpg);
+  }
+}
 @media only screen and (max-width: 56.25em) {
   .heading-bg-presentations {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../../images/chipishow-header-tab-port.jpg);
     letter-spacing: 2.2rem;
     background-position: 0% 40%;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .heading-bg-presentations {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../../images/chipishow-header-phone.jpg);
     letter-spacing: 1.2rem;
     clip-path: polygon(0 30%, 100% 15%, 100% 65%, 0 80%);
     background-position: 0% 85%;
@@ -665,6 +672,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.section-presentation__text picture {
+  display: flex;
+  justify-content: center;
 }
 .section-presentation--email {
   font-size: 1.2rem;
