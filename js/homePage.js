@@ -1,6 +1,6 @@
 if (window.innerWidth < 700) {
     const headerVideo = document.getElementById("header-video");
-    headerVideo.src = "videos/header-video-phone.mp4"
+    headerVideo.src = "videos/header-video-phone-low.mp4"
 }
 
 
