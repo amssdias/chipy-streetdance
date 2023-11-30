@@ -66,6 +66,10 @@
         }
     }
 
+    & a {
+        text-decoration: none;
+    }
+
     &__slogan {
         display: none;
         font-size: 3rem;

@@ -140,6 +140,10 @@ body {
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+.heading-sixth {
+  font-size: 1.4rem;
+}
+
 .heading-bg-presentations {
   width: 100%;
   height: 100%;
@@ -281,6 +285,33 @@ body {
   right: 2rem;
   z-index: 100;
   padding: 1.5rem 3rem !important;
+}
+
+.contact {
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+}
+.contact__info {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem;
+  width: 50%;
+}
+.contact__info__image {
+  width: 10%;
+  margin-right: 2rem;
+}
+.contact__info__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20rem;
+  font-size: 1.2rem;
+}
+.contact__info__text__link {
+  text-decoration: none;
+  color: #000;
 }
 
 .gallery-row {
@@ -522,6 +553,9 @@ body {
 .navigation-bar__list-item:hover {
   cursor: pointer;
   color: #999;
+}
+.navigation-bar a {
+  text-decoration: none;
 }
 .navigation-bar__slogan {
   display: none;
