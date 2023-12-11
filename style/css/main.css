@@ -209,9 +209,10 @@ body {
 }
 
 .parallax {
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
-  background-position: 0% 60%;
+  background-position: 0% 70%;
+  background-repeat: no-repeat;
 }
 
 .bg-video {
@@ -378,6 +379,12 @@ body {
   height: 100%;
   object-fit: cover;
   position: relative;
+}
+.gallery-row--image--2 {
+  object-position: 0% 95%;
+}
+.gallery-row--image--4 {
+  object-position: 0% 80%;
 }
 
 .pop-up {

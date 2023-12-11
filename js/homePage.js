@@ -4,25 +4,26 @@ if (window.innerWidth < 700) {
 }
 
 
-window.addEventListener('load', function() {
+// Home page, event for images become big
+const images = document.querySelectorAll(".gallery-row--image");
+const popUp = document.querySelector("#pop-up");
+const popUpImg = document.querySelector("#pop-up-image");
 
-    // Home page, event for images become big
-    let images = document.querySelectorAll(".gallery-row--image");
-    let popUp = this.document.querySelector("#pop-up");
-    let img = document.querySelector("#pop-up-image");
 
-    for (const image of images) {
-        image.addEventListener("click", function() {            
-            popUp.style.display = "flex";
+popUp.addEventListener("click", function () {
+    this.style.display = "none";
+})
 
-            // Use original image
-            let source = this.src.split("-").slice(0, 2).join("-")
-            img.src = `${source}.jpg`;
-        });
-    }
 
-    popUp.addEventListener("click", function() {
-        this.style.display = "none";
+images.forEach(function (img) {
+    img.addEventListener("click", function () {
+        popUp.style.display = "flex";
+
+        // Use original image
+        const path = this.src.split("/");
+        path.pop();
+        const source = this.src.split("/").pop().split(".")[0].split("-").slice(0, 2).join("-");
+        popUpImg.src = `${path.join("/")}/${source}.jpg`;
     })
+})
 
-});
