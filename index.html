@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Soy un artista de calle que quiero promover mi espectáculo y dar sonrisas a todo el mundo.">
+    <meta name="description"
+        content="Soy un artista de calle que quiero promover mi espectáculo y dar sonrisas a todo el mundo.">
     <meta name="keywords" content="busk, streetshow, Madrid, dance, dancer">
     <meta name="author" content="Andre Dias">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,24 +22,37 @@
 
     <title>Chipi show | Streetdance</title>
 </head>
+
 <body>
 
     <nav class="navigation-bar">
         <a href="index.html"><img class="navigation-bar__logo" src="images/logo/logo.png" alt="logo street show"></a>
 
         <ul id="navigation-bar__list" class="navigation-bar__list">
-            <a class="navigation-bar__list--link" href="index.html"><li class="navigation-bar__list-item">Home</li></a>
-            <a class="navigation-bar__list--link" href="pages/presentaciones.html"><li class="navigation-bar__list-item">Acerca de mi</li></a>
-            <a class="navigation-bar__list--link" href="pages/show.html"><li class="navigation-bar__list-item">Show</li></a>
-            <a class="navigation-bar__list--link" href="pages/contacto.html"><li class="navigation-bar__list-item">Contacto</li></a>
+            <a class="navigation-bar__list--link" href="index.html">
+                <li class="navigation-bar__list-item" data-translate="navigation-bar-home">Home</li>
+            </a>
+            <a class="navigation-bar__list--link" href="pages/presentaciones.html">
+                <li class="navigation-bar__list-item" data-translate="navigation-bar-about-me">Acerca de mi</li>
+            </a>
+            <a class="navigation-bar__list--link" href="pages/show.html">
+                <li class="navigation-bar__list-item" data-translate="navigation-bar-show">Show</li>
+            </a>
+            <a class="navigation-bar__list--link" href="pages/contacto.html">
+                <li class="navigation-bar__list-item" data-translate="navigation-bar-contact">Contacto</li>
+            </a>
         </ul>
 
-        <a href="index.html"><h5 class="navigation-bar__slogan">chipishow</h5></a>
+        <a href="index.html">
+            <h5 class="navigation-bar__slogan">chipishow</h5>
+        </a>
 
-        <img id="navigation-bar__menu-icon" class="navigation-bar__menu-icon" src="images/social-network/bars-solid.svg" alt="Menu">
+        <img id="navigation-bar__menu-icon" class="navigation-bar__menu-icon" src="images/social-network/bars-solid.svg"
+            alt="Menu">
     </nav>
-    <a href="https://busk.co/chipishow/tip?fbclid=PAAab6YMW7IkaN22wmhC8r3bZS_kcux4GrkTlSUwE77ITRdwsDF-RWNWJmCOA" target="_blank" class="btn btn--black btn--fixed">
-        Click here for Street Show <span class="btn--letters-green">Donations</span>
+    <a href="https://busk.co/chipishow/tip?fbclid=PAAab6YMW7IkaN22wmhC8r3bZS_kcux4GrkTlSUwE77ITRdwsDF-RWNWJmCOA"
+        target="_blank" class="btn btn--black btn--fixed">
+        Click here for Street Show <span class="btn--letters-green" data-translate="header-donations">Donations</span>
     </a>
 
     <header class="header">
@@ -58,25 +73,31 @@
     <main class="main">
         <div id="pop-up" class="pop-up">
             <div class="pop-up-image-container">
-                <img id="pop-up-image" class="pop-up-image" src="" alt="Pop up photo">
+                <img id="pop-up-image" class="pop-up-image" alt="Pop up photo">
             </div>
         </div>
-        
+
         <section class="section-company">
 
             <h2 class="heading-secondary margin-bottom-medium">
                 Chipi show
             </h2>
 
-            <p class="paragraph">
-                Chipi es un bailarín venezolano que ha logrado embelesar a la audiencia de más de 15 países con su espectáculo "Catching my Hat". Su rutina combina breaking, acrobacias, baile, humor e interacción con el público. 30 minutos de espectáculo interactivo donde el artista se fusiona con la música y el baile, realizando acrobacias y circo, dando paso a la imaginación en el público expectante.
+            <p class="paragraph" data-translate="section-company-paragraph">
+                Chipi es un bailarín venezolano que ha logrado embelesar a la audiencia de más de 15 países con su
+                espectáculo "Catching my Hat". Su rutina combina breaking, acrobacias, baile, humor e interacción con el
+                público. 30 minutos de espectáculo interactivo donde el artista se fusiona con la música y el baile,
+                realizando acrobacias y circo, dando paso a la imaginación en el público expectante.
             </p>
-            
+
             <div class="video-container margin-bottom-medium">
-                <iframe class="video" src="https://www.youtube.com/embed/rHH2_DdEFf0?si=wkVHpmgemi0P8xqg" title="Chipi Show Promo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="video" src="https://www.youtube.com/embed/rHH2_DdEFf0?si=wkVHpmgemi0P8xqg"
+                    title="Chipi Show Promo" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
-            
-            <a href="https://www.youtube.com/@ChipiShow" target="_blank" class="btn btn--black">Ver más</a>
+
+            <a href="https://www.youtube.com/@ChipiShow" target="_blank" class="btn btn--black" data-translate="section-company-see-more">Ver más</a>
 
         </section>
 
@@ -90,7 +111,8 @@
                         <source media="(max-width: 900px)" srcset="images/home/home-1-tab-port.jpg">
                         <source media="(max-width: 1200px)" srcset="images/home/home-1-tab-land.jpg">
 
-                        <img class="gallery-row--image gallery-row--image--1" src="images/home/home-1-big-desktop.jpg" alt="Portugal busk">
+                        <img class="gallery-row--image gallery-row--image--1" src="images/home/home-1-big-desktop.jpg"
+                            alt="Portugal busk">
                     </picture>
                 </div>
 
@@ -100,17 +122,19 @@
                         <source media="(max-width: 900px)" srcset="images/home/home-2-tab-port.jpg">
                         <source media="(max-width: 1200px)" srcset="images/home/home-2-tab-land.jpg">
 
-                        <img class="gallery-row--image gallery-row--image--2" src="images/home/home-2-big-desktop.jpg" alt="Portugal busk hat">
+                        <img class="gallery-row--image gallery-row--image--2" src="images/home/home-2-big-desktop.jpg"
+                            alt="Portugal busk hat">
                     </picture>
                 </div>
-                
+
                 <div class="gallery-row-container">
                     <picture>
                         <source media="(max-width: 600px)" srcset="images/home/home-3-phone.jpg">
                         <source media="(max-width: 900px)" srcset="images/home/home-3-tab-port.jpg">
                         <source media="(max-width: 1200px)" srcset="images/home/home-3-tab-land.jpg">
 
-                        <img class="gallery-row--image gallery-row--image--3" src="images/home/home-3-big-desktop.jpg" alt="Madrid busk show people">
+                        <img class="gallery-row--image gallery-row--image--3" src="images/home/home-3-big-desktop.jpg"
+                            alt="Madrid busk show people">
                     </picture>
                 </div>
 
@@ -120,7 +144,8 @@
                         <source media="(max-width: 900px)" srcset="images/home/home-4-tab-port.jpg">
                         <source media="(max-width: 1200px)" srcset="images/home/home-4-tab-land.jpg">
 
-                        <img class="gallery-row--image gallery-row--image--4" src="images/home/home-4-big-desktop.jpg" alt="Lisbon crowd speaker">
+                        <img class="gallery-row--image gallery-row--image--4" src="images/home/home-4-big-desktop.jpg"
+                            alt="Lisbon crowd speaker">
                     </picture>
                 </div>
 
@@ -130,7 +155,8 @@
                         <source media="(max-width: 900px)" srcset="images/home/home-5-tab-port.jpg">
                         <source media="(max-width: 1200px)" srcset="images/home/home-5-tab-land.jpg">
 
-                        <img class="gallery-row--image gallery-row--image--5" src="images/home/home-5-big-desktop.jpg" alt="Puerta de sol show speaker">
+                        <img class="gallery-row--image gallery-row--image--5" src="images/home/home-5-big-desktop.jpg"
+                            alt="Puerta de sol show speaker">
                     </picture>
                 </div>
 
@@ -143,21 +169,29 @@
             <video class="bg-video--horizontal" id="video-background" autoplay loop muted>
                 <source src="videos/text-video.mov" type="video/mp4">
                 <!-- Add additional source elements for other video formats if needed -->
-              </video>
+            </video>
         </section>
 
         <section class="section-youtube">
-            <h2 class="heading-secondary margin-bottom-medium">
+            <h2 class="heading-secondary margin-bottom-medium" data-translate="section-youtube-header">
                 Mi trabajo
             </h2>
-            
+
             <div class="section-youtube-videos">
                 <div class="video-container">
-                    <iframe class="video margin-bottom-medium" src="https://www.youtube.com/embed/HiAQPRP8vr4?si=KkBmIWCVTkGzX_bO" title="ChipiShow Lisboa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video margin-bottom-medium"
+                        src="https://www.youtube.com/embed/HiAQPRP8vr4?si=KkBmIWCVTkGzX_bO" title="ChipiShow Lisboa"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
 
                 <div class="video-container">
-                    <iframe class="video margin-bottom-medium" src="https://www.youtube.com/embed/sFcmYQmiyBo?si=ornfaTu7Zui5S4PI" title="ChipiShow Madrid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video margin-bottom-medium"
+                        src="https://www.youtube.com/embed/sFcmYQmiyBo?si=ornfaTu7Zui5S4PI" title="ChipiShow Madrid"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
 
         </section>
@@ -181,15 +215,22 @@
 
         </div>
 
-        <a href="pages/contacto.html" class="btn btn--black margin-bottom-small">Contacto</a>
+        <a href="pages/contacto.html" class="btn btn--black margin-bottom-small" data-translate="navigation-bar-contact">Contacto</a>
 
-        <p class="footer__paragraph">Todos los derechos reservados Chipi show - <a href="https://www.linkedin.com/in/dias-webdev/" class="footer__link">@ André Dias</a></p>
+        <p class="footer__paragraph">
+            <span data-translate="section-footer-paragraph">Todos los derechos reservados Chipi show - </span>
+            <a href="https://www.linkedin.com/in/dias-webdev/" class="footer__link" data-translate="section-footer-link">@ André Dias</a>
+        </p>
 
     </footer>
 
 
     <script src="js/homePage.js"></script>
     <script src="js/menuBar.js"></script>
+    <script src="js/languages/en.js"></script>
+    <script src="js/languages/es.js"></script>
+    <script src="js/translations/translation.js"></script>
 
 </body>
+
 </html>

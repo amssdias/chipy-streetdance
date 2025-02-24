@@ -18,7 +18,7 @@
     <!-- Font awesome icons -->
     <script src="https://kit.fontawesome.com/5cf6dd6ac1.js" crossorigin="anonymous"></script>
 
-    <title>Chipi show | Contacto</title>
+    <title data-translate="main-title-contact">Chipi show | Contacto</title>
 </head>
 <body>
 
@@ -26,10 +26,10 @@
         <a href="../index.html"><img class="navigation-bar__logo" src="../images/logo/logo.png" alt="logo street show"></a>
 
         <ul id="navigation-bar__list" class="navigation-bar__list">
-            <a class="navigation-bar__list--link" href="../index.html"><li class="navigation-bar__list-item">Home</li></a>
-            <a class="navigation-bar__list--link" href="presentaciones.html"><li class="navigation-bar__list-item">Acerca de mi</li></a>
-            <a class="navigation-bar__list--link" href="show.html"><li class="navigation-bar__list-item">Show</li></a>
-            <a class="navigation-bar__list--link" href="contacto.html"><li class="navigation-bar__list-item">Contacto</li></a>
+            <a class="navigation-bar__list--link" href="../index.html"><li class="navigation-bar__list-item" data-translate="navigation-bar-home">Home</li></a>
+            <a class="navigation-bar__list--link" href="presentaciones.html"><li class="navigation-bar__list-item" data-translate="navigation-bar-about-me">Acerca de mi</li></a>
+            <a class="navigation-bar__list--link" href="show.html"><li class="navigation-bar__list-item" data-translate="navigation-bar-show">Show</li></a>
+            <a class="navigation-bar__list--link" href="contacto.html"><li class="navigation-bar__list-item" data-translate="navigation-bar-contact">Contacto</li></a>
         </ul>
 
         <a href="../index.html"><h5 class="navigation-bar__slogan">chipishow</h5></a>
@@ -41,18 +41,18 @@
         
         <section class="section-contact">
 
-            <h2 class="heading-secondary margin-bottom-medium">
+            <h2 class="heading-secondary margin-bottom-medium" data-translate="section-contact-header">
                 Información
             </h2>
 
-            <p class="paragraph">Chipishow tiene su base en Madrid y viaja con frecuencia para presentaciones en todo España e internacionalmente. Ponte en contacto hoy para conocer su disponibilidad.</p>
+            <p class="paragraph" data-translate="section-contact-paragraph">Chipishow tiene su base en Madrid y viaja con frecuencia para presentaciones en todo España e internacionalmente. Ponte en contacto hoy para conocer su disponibilidad.</p>
 
             <div class="contact margin-bottom-medium">
 
                 <div class="contact__info">
                     <img class="contact__info__image contact__info__image--phone" src="../images/social-network/phone.svg" alt="phone">
                     <div class="contact__info__text">
-                        <h6 class="heading-sixth">Telefono</h6>
+                        <h6 class="heading-sixth" data-translate="section-contact-phone">Telefono</h6>
                         <a href="tel:+34652618363" class="contact__info__text__link">+34 652618363</a>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
     </main>
 
     <footer class="footer">
-        <a href="https://busk.co/chipishow/tip?fbclid=PAAab6YMW7IkaN22wmhC8r3bZS_kcux4GrkTlSUwE77ITRdwsDF-RWNWJmCOA" target="_blank" class="btn btn--black margin-bottom-small">Click here for Street Show Donations</a>
+        <a href="https://busk.co/chipishow/tip?fbclid=PAAab6YMW7IkaN22wmhC8r3bZS_kcux4GrkTlSUwE77ITRdwsDF-RWNWJmCOA" target="_blank" class="btn btn--black margin-bottom-small" data-translate="footer-donations-link">Click here for Street Show Donations</a>
 
         <div class="footer__social-network margin-bottom-medium">
             <a href="https://www.tiktok.com/@elshowdechipi" target="_blank" class="footer__social-network--link">
@@ -108,14 +108,19 @@
 
         </div>
 
-        <a href="contacto.html" class="btn btn--black margin-bottom-small">Contacto</a>
+        <a href="contacto.html" class="btn btn--black margin-bottom-small" data-translate="navigation-bar-contact">Contacto</a>
 
-        <p class="footer__paragraph">Todos los derechos reservados Chipi show - <a href="https://www.linkedin.com/in/dias-webdev/" class="footer__link">@ André Dias</a></p>
-
+        <p class="footer__paragraph">
+            <span data-translate="section-footer-paragraph">Todos los derechos reservados Chipi show - </span>
+            <a href="https://www.linkedin.com/in/dias-webdev/" class="footer__link" data-translate="section-footer-link">@ André Dias</a>
+        </p>
     </footer>
 
     <script src="../js/menuBar.js"></script>
     <script src="../js/contactPage.js"></script>
+    <script src="../js/languages/en.js"></script>
+    <script src="../js/languages/es.js"></script>
+    <script src="../js/translations/translation.js"></script>
 
 </body>
 </html>
